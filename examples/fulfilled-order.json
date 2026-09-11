@@ -1,0 +1,11 @@
+{
+  "id": "ord-1042",
+  "currency": "USD",
+  "checkout": {"status": "paid"},
+  "fulfillment": {"status": "shipped"},
+  "receipt": {"number": "R-1042", "customer_email": "buyer@example.com"},
+  "items": [
+    {"name": "USB-C dock", "quantity": 1, "unit_cents": 12900},
+    {"name": "Display cable", "quantity": 2, "unit_cents": 1800}
+  ]
+}

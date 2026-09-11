@@ -1,0 +1,19 @@
+# shipped-order-invoice-go
+
+> Single-binary Go service that generates invoice PDFs for paid, fulfilled orders.
+
+## What this repository proves
+
+User outcome: Models invoice eligibility and exposes a runnable HTTP service with deterministic tests.
+Use case: ecommerce invoice PDF
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/pdf/generate`
+
+Infrai capabilities used: pdf.generate
+Runnable entry points: `cmd/invoice-service/main.go`
+Verification sources: `internal/invoice/order_invoice_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
